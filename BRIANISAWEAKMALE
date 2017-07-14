@@ -1,2 +1,3 @@
-g="Brian"
-print g, " is a weak male"
+U="Luca is a fag"
+for i in range(1000000):
+	print U
