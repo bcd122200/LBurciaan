@@ -1,2 +1,2 @@
-g=Brian
-print G  " is a weak male"
+g="Brian"
+print g, " is a weak male"
