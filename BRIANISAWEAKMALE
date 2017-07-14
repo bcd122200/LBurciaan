@@ -1,3 +1,35 @@
-U="Luca is a fag"
-for i in range(1000000):
+import random
+
+x = random.randint(0,2)
+
+if x==0:
+	j="brian"
+if x==1:
+	j="Brian"
+if x==2:
+	j="Brian in the past present and future"
+
+t = random.randint(0,8)
+
+if x==0:
+        t="cuck"
+if x==1:
+        t="weak male"
+if x==2:
+        t="fag"
+if x==3:
+        t="faggot"
+if x==4:
+        t="sucks"
+if x==5:
+	t="jew"
+if x==6:
+        t="antisemite"
+if x==7:
+        t="liberal"
+if x==8:
+        t="lil boi who will get boi'd in his boihole"
+
+U= j, " is a ", t
+for i in range(100):
 	print U
