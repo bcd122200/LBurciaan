@@ -1,22 +1,20 @@
 f=open("/share/data/day5/puzzle.txt")
-lines=f.readlines()
 U=""
 V=""
 W=""
-B=""
+lines=f.readlines()
 for i in lines:
+	j=i.split()
+	print j
+for i in j:
 	if "SSS" in i:
 		U=U+i
 	if "PPRPPRP" in i:
 		W=W+i
-	if "KV" in i:
-		B=B+i	
 	else:
 		V=V+i
 print "these have SSS"
 print U
-print "These have KV"
-print B
 print "these have PPRPPRP"
 print W
 print "garbage leftovers"
