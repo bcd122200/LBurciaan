@@ -1,5 +1,13 @@
 f=open("/share/data/day5/puzzle.txt")
 lines=f.readlines()
+o=15
+p=0
+for i in lines:
+        print lines[p:o]
+        o=o+15
+        p=p+15
+
+
 U=""
 V=""
 W=""
@@ -22,3 +30,7 @@ print W
 print "garbage leftovers"
 print V
 
+lines="".join(lines)
+
+
+print lines
