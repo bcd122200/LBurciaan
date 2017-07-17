@@ -10,26 +10,17 @@ b=a[0:15]
 list=line.split()
 z=list[0]
 k=z[0:4]
-#print k
+print k
 x=0
 y=15
 for i in lines:
-	print i
+	#print i
 	a=lines[0]
 	b=a[15:30]
 	if k in b:
-		print b	
+		print "filler"
+		#print b	
 	y=y+15
 	x=x+15
 
-
-
-
-
-
-
-
-
-
-
-
+	print k in lines
