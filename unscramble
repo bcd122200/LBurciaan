@@ -1,14 +1,13 @@
 f=open("/share/data/day5/puzzle.txt")
 U=""
 V=""
-print "brian fuckin sucks"
 W=""
 lines=f.readlines()
 for i in lines:
 	j=i.split()
 	#print j
 for i in j:
-	if "SSS" in i:
+	if "STMPATSSS" in i:
 		U=U+i
 	if "PPRPPRP" in i:
 		W=W+i
