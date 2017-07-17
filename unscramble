@@ -2,9 +2,19 @@ f=open("/share/data/day5/puzzle.txt")
 U=""
 V=""
 line=f.readline()
+lines=f.readlines()
 list=line.split()
-i=list[0]
-print i[0:4]
+z=list[0]
+k=z[0:4]
+for i in lines:
+	print i
+	if k in i:
+		U=U+i
+	else:
+		V=V+i
+print U
+print V
+
 
 
 
