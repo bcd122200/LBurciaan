@@ -3,11 +3,11 @@ import random
 x = random.randint(0,2)
 
 if x==0:
-	j="brian"
+	j="Luca"
 if x==1:
-	j="Brian"
+	j="Luca"
 if x==2:
-	j="Brian in the past present and future"
+	j="Luca in the past present and future"
 
 t = random.randint(0,8)
 
