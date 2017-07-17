@@ -1,7 +1,8 @@
 f=open("/share/data/day5/puzzle.txt")
 U=""
 V=""
-print "brian fuckin sucks"
+j=raw_input("Enter sequence: ")
+X=""
 W=""
 lines=f.readlines()
 for i in lines:
@@ -12,12 +13,16 @@ for i in j:
 		U=U+i
 	if "PPRPPRP" in i:
 		W=W+i
+	if j in i:
+		X=X+i
 	else:
 		V=V+i
 print "these have SSS"
 print U
 print "these have PPRPPRP"
 print W
+print "what u want bb"
+print X
 print "garbage leftovers"
 print V
 
