@@ -12,4 +12,6 @@ for i in lines:
 	P.append(i.split()[1])
 	P.append(i.split()[2])
 	P.append(i.split()[3])
-print P
+J="".join(P)
+
+print J
