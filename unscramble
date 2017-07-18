@@ -1,6 +1,6 @@
 f=open("/share/data/day5/puzzle.txt")
 U=""
-V=""
+V="TGYK"
 lines=f.readlines()
 a=lines[0]
 b=a[0:15]
@@ -14,7 +14,10 @@ for i in lines:
 	P.append(i.split()[3])
 for i in P:
 	print i
-	if "TGYK" in i:
-		print i
+	if V in i:
+		U=U+i
+	else:
+		print "The snippet below above this has no 'TGYK'"
+print U
 #print P
 #print J
