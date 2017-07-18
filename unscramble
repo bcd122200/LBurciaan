@@ -2,26 +2,88 @@ f=open("/share/data/day5/puzzle.txt")
 V="TGYK"
 x=0
 y=4
-w=3
-z=""
 lines=f.readlines()
 a=lines[0]
 b=a[0:15]
 h=b[x:y]
-#print b[0:4]
-#print a
-#print b
+
 P=[]
 for i in lines:
 	P.append(i.split()[0])
 	P.append(i.split()[1])
 	P.append(i.split()[2])
 	P.append(i.split()[3])
+print P[0]
 for i in P:
+	h=i[x:y]
+	print h
 	q=i.find(h)
-	print q
-	z=i[q:4:15-(4--q+1)]
-print z	
+	#print q
+	if q==0:
+		V=V+i[y]
+		x=x+1
+		y=y+1
+		h=i[x:y]
+		continue
+	if q==1:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==2:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==3:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==4:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==5:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==6:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==7:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==8:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==9:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
+	if q==10:
+                V=V+i[y]
+                x=x+1
+                y=y+1
+                h=i[x:y]
+		continue
 
-
-
+print V
