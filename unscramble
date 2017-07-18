@@ -1,9 +1,14 @@
 f=open("/share/data/day5/puzzle.txt")
-U=""
 V="TGYK"
+x=0
+y=4
+w=3
+z=""
 lines=f.readlines()
 a=lines[0]
 b=a[0:15]
+h=b[x:y]
+#print b[0:4]
 #print a
 #print b
 P=[]
@@ -13,11 +18,10 @@ for i in lines:
 	P.append(i.split()[2])
 	P.append(i.split()[3])
 for i in P:
-	print i
-	if V in i:
-		U=U+i
-	else:
-		print "The snippet below above this has no 'TGYK'"
-print U
-#print P
-#print J
+	q=i.find(h)
+	print q
+	z=i[q:4:15-(4--q+1)]
+print z	
+
+
+
