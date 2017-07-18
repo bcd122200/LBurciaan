@@ -12,10 +12,9 @@ for i in lines:
 	P.append(i.split()[1])
 	P.append(i.split()[2])
 	P.append(i.split()[3])
-J="".join(P)
-for i in J:
-	if "GTCY" in i:
+for i in P:
+	print i
+	if "TGYK" in i:
 		print i
-
-
+#print P
 #print J
