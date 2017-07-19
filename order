@@ -1,10 +1,20 @@
 list=["ATGC", "A", "TT", "CACTAT"]
+V=[]
+x=1
+for i in list:
+	V.append(len(i))
+
+K=sorted(V)
 j=len(min(list, key=len))
 U=""
+P=len(K)
 k=len(max(list, key=len))
 for i in range(k):
 	for i in list:
 		if len(i)==j:
 			U=U+i+", "
-	j=j+1
+	x=x+1
+	if x==P:
+		break	
+	j=K[x]
 print "The order from smallest to largest:",U
