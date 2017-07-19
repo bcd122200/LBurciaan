@@ -1,10 +1,10 @@
 list=["ATGC", "A", "TT", "CACTAT"]
 j=1
 U=""
-for i in list:
+for i in range(100):
 	for i in list:
-		print j
 		if len(i)==j:
 			U=U+i+","
 	j=j+1
+
 print U
