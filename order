@@ -1,10 +1,10 @@
 list=["ATGC", "A", "TT", "CACTAT"]
-j=1
+j=len(min(list, key=len))
 U=""
-for i in range(100):
+k=len(max(list, key=len))
+for i in range(k):
 	for i in list:
 		if len(i)==j:
-			U=U+i+","
+			U=U+i+", "
 	j=j+1
-
-print U
+print "The order from smallest to largest:",U
