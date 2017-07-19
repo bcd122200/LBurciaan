@@ -1,0 +1,9 @@
+list=["ATGC", "A", "TT", "CACTAT"]
+U=[]
+k=len(max(list, key=len))
+for i in range(k):
+	for i in list:
+		j=min(list, key=len)
+		list.remove(j)
+		U=U+j+","
+print U
