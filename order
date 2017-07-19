@@ -1,1 +1,17 @@
-list=["ATGC", "A", "TT", "CACTAT"]
+list=["ATGC", "A", "TT", "G",  "CACTAT"]
+j=1
+U=""
+for i in list:
+	if len(i)==1:
+		U=U+i+","
+	if len(i)==2:
+                U=U+i+","
+	if len(i)==3:
+                U=U+i+","
+	if len(i)==4:
+                U=U+i+","
+	if len(i)==5:
+		U=U+i+","
+	if len(i)==5:
+		U=U+i+","
+print U
