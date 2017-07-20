@@ -1,12 +1,12 @@
 f=open("/share/data/day5/puzzle.txt")
-V="TGYK"
+V="SKDT"
 x=0
 y=4
 lines=f.readlines()
 a=lines[0]
 b=a[0:15]
-h=b[x:y]
-
+#h=b[x:y]
+h="SKDT"
 P=[]
 for i in lines:
 	P.append(i.split()[0])
@@ -16,53 +16,55 @@ for i in lines:
 #print P[0]
 #h=i[x:y]
 for i in P:
-	#print h
-	q=i.find(h)
-	#print q
-	if q==0:
-		V=V+i[4]
-		h=i[1:4]
-		continue
-	if q==1:
-                V=V+i[5]
-                h=i[2:5]
-                continue
-	if q==2:
-                V=V+i[6]
-                h=i[3:6]
-                continue
-	if q==3:
-                V=V+i[7]
-                h=i[4:7]
-		continue
-	if q==4:
-                V=V+i[8]
-                h=i[5:8]
-                continue
-	if q==5:
-                V=V+i[9]
-                h=i[6:9]
-                continue
-	if q==6:
-                V=V+i[10]
-                h=i[7:10]
-                continue
-	if q==7:
-                V=V+i[11]
-                h=i[8:11]
-                continue
-	if q==8:
-                V=V+i[12]
-                h=i[9:12]
-                continue
-	if q==9:
-                V=V+i[13]
-                h=i[10:13]
-                continue
-	if q==10:
-                V=V+i[14]
-                h=i[11:14]
-                continue
+	for i in P:
+		#print h
+		q=i.find(h)
+		#print q
+		if q==0:
+			V=V+i[4]
+			h=i[1:4]
+			continue
+		if q==1:
+                	V=V+i[5]
+	                h=i[2:5]
+        	        continue
+		if q==2:
+        	        V=V+i[6]
+                	h=i[3:6]
+	                continue
+		if q==3:
+                	V=V+i[7]
+	                h=i[4:7]
+			continue
+		if q==4:
+        	        V=V+i[8]
+                	h=i[5:8]
+	                continue
+			print "brian"
+		if q==5:
+	                V=V+i[9]
+        	        h=i[6:9]
+                	continue
+		if q==6:
+        	        V=V+i[10]
+                	h=i[7:10]
+	                continue
+		if q==7:
+        	        V=V+i[11]
+                	h=i[8:11]
+	                continue
+		if q==8:
+        	        V=V+i[12]
+                	h=i[9:12]
+	                continue
+		if q==9:
+	                V=V+i[13]
+        	        h=i[10:13]
+                	continue
+		if q==10:
+        	        V=V+i[14]
+                	h=i[11:14]
+	                continue
 
 print V
 
